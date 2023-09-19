@@ -6,7 +6,7 @@
 #    By: ivanderw <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/31 15:10:22 by ivanderw          #+#    #+#              #
-#    Updated: 2023/06/09 16:03:39 by ivanderw         ###   ########.fr        #
+#    Updated: 2023/09/19 20:25:47 by ivanderw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ LIBFT_DIR = source/libft/
 CC_FLAGS = gcc -Wall -Wextra -Werror -I includes -I mlx \
 		   	-Lmlx -lmlx -framework OpenGL \
 			-L$(LIBFT_DIR) -lft		\
-			-framework AppKit -fsanitize=address -g
+			-framework AppKit #-fsanitize=address -g
 
 SOURCE  = 	source/main.c						\
 			source/utilities/check_utils.c		\
